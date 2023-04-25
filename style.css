@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Dosis&family=PT+Serif:wght@700&family=Titillium+Web:ital,wght@1,300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    font-size: 100%;
+    background: linear-gradient(135deg, #ff8f00 0, #ff9b00 5.56%, #f8a500 11.11%, #e5ae00 16.67%, #d0b600 22.22%, #babd00 27.78%, #a2c400 33.33%, #88c900 38.89%, #69cd00 44.44%, #3ed115 50%, #00d43a 55.56%, #00d755 61.11%, #00d96f 66.67%, #00da88 72.22%, #00dba1 77.78%, #00dcba 83.33%, #00ddd3 88.89%, #00ddec 94.44%, #00ddff 100%);
+}
+
+.cabecalho{
+    
+    width: 100%;
+    /* background: radial-gradient(circle at 71.52% 24.36%, #ffff56 0, #ffff40 12.5%, #ffff2e 25%, #ffe921 37.5%, #ffc518 50%, #e9a315 62.5%, #d48615 75%, #c16e18 87.5%, #b1591b 100%); */
+    height: 220px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cabecalho-logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    padding-bottom: 65px;
+    
+}
+
+.cabecalho-redes{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 120px;
+  margin-top: -170px;
+  padding-bottom: 95px;
+  gap: 5px;
+}
+
+.cabecalho-redes-um{
+    width: 35px;
+    margin-top: -50px;
+}
+
+.cabecalho-redes-dois{
+    width: 50px;
+    margin-top: -50px;
+}
+
+.linha-horizontal-um{
+    height: 25px;
+    width: 0.1px;
+}
+
+.linha-horizontal-dois{
+    height: 25px;
+    width: 0.1px;
+    
+}
+
+.linha-vertical-um{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cabecalho-menu{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 150px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 22px;
+    margin-left: 5%;
+}
+
+.linha-vertical-dois{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+}
+
+.content{
+    padding-top: 20px;
+    height: 620px;
+    width: 98%;
+    border-radius: 40px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navigation{
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+}
+
+.bar{
+    width: 70px;
+    height: 17px;
+    border: 2px solid white;
+    margin: 6px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.bar:hover{
+    background-color: white;
+}
+
+input{
+    display: none;
+}
+
+.slides{
+    display: flex;
+    width: 300%;
+    height: 100%;
+}
+
+.slide{
+    width: 33.3%;
+    transition: .6s;
+}
+
+.slide img{
+    width: 100%;
+    height: 100%;
+}
+
+#slide1:checked ~ .s1{
+    margin-left: 0;
+}
+
+#slide2:checked ~ .s1{
+    margin-left: -33.3%;
+}
+
+#slide3:checked ~ .s1{
+    margin-left: -66.6%;
+}
+
+.conteudo-historia-titulo{
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+    font-size: 40px;
+    padding: 30px;
+}
+
+.conteudo-historia-paragrafo{
+    text-align: center;
+    padding-bottom: 40px;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 18px;
+}
+
+.conteudo-historia-botao{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 60px;
+    border-radius: 10px ;
+    font-family: 'PT Serif', serif;
+    font-size: 15pt;
+}
+
+.conteudo-historia-botao:hover{
+    opacity: 0.7;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.imagem-centro{
+    padding-top: 40px;
+    display: block;
+    margin-left: 60px;
+    margin-right: 60px;
+    padding-bottom: 40px;
+    
+}
+
+.conteudo-principal-titulo{
+    padding-bottom: 40px;
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+    font-size: 40PX;
+}
+
+.conteudo-imagem{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: -50px;
+    }
+
+.rodape{
+    height: 250px;
+    /* background: radial-gradient(circle at 71.52% 24.36%, #ffff56 0, #ffff40 12.5%, #ffff2e 25%, #ffe921 37.5%, #ffc518 50%, #e9a315 62.5%, #d48615 75%, #c16e18 87.5%, #b1591b 100%); */
+    margin-top: 100px;
+}
+
+.linha{
+    border-top: 1px solid ;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.rodape-titulo{
+    margin-left: 84.5%;
+    margin-top: 120px;
+}
+
+.logo-final{
+    position: absolute;
+    width: 300px;
+    margin-left: 40%;
+    margin-top: -60px;
+    
+
+}
+
+.rodape-telefone{
+    margin-left: 86%;
+}
+
+.rodape-nome{
+    margin-top: 10px;
+    text-align: center;
+}
